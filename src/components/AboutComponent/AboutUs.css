@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+.sub-header{
+    font-weight: bolder !important;
+    text-transform: capitalize !important;
+    font-family: 'Lora', "Nunito",serif !important;
+    color: #ca3d26;
+}
