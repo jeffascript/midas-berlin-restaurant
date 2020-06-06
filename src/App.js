@@ -9,6 +9,10 @@ import CarouselComponent from "./components/HeaderComponent/CarouselComponent/Ca
 import { Link } from "react-scroll";
 import AboutUs from "./components/AboutComponent/AboutUs";
 import Offers from "./components/OffersComponent/Offers";
+import Menu from "./components/MenuComponent/Menu";
+import { KnowYourScreenSize } from "./components/ScreenSize";
+import Information from "./components/Information/Information";
+
 
 
 
@@ -89,16 +93,25 @@ function App() {
 
         <section id="menu" >
           <Container fluid  >
-            <AboutUs />
+            <Menu />
           </Container>
         </section>
 
 
 
-        <section id="menu">
-          <Container fluid className="bg-primary ">
+        <section id="info" className="section-team section-outline">
+          <Container fluid className="bg-white section-dark-cover " >
             <Row>
-              <h5>heyy</h5>
+            <Information />
+            </Row>
+          </Container>
+        </section>
+
+        <section id="gallery">
+          <Container fluid >
+            <Row>
+              <KnowYourScreenSize />
+            <AboutUs />
             </Row>
           </Container>
         </section>

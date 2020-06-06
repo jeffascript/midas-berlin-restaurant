@@ -31,6 +31,10 @@ a {
   color: #212324;
 }
 
+.select-color{
+    color: #ca3d26;
+}
+
 a:hover {
   color: #ca3d26;
 }
@@ -79,6 +83,14 @@ p{
   transform: rotateX(180deg); */
   width: 100%;
   z-index: 9;
+
+}
+
+.header-divider{
+    width: 80px;
+    height: 4px;
+    margin: 30px auto;
+    background: #ca3d26;
 
 }
 

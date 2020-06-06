@@ -104,6 +104,13 @@
   100% {transform: translate(-50%, 15px)}
 }
 
+
+/* .section-team::before{
+width: 0  !important;
+} */
+
+
+
 .section-outline::before{
   content: "";
   background: transparent url("./img/bottom-white.png")repeat scroll 0 0;

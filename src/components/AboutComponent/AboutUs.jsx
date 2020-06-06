@@ -25,6 +25,7 @@ const AboutUs = () => {
                     <Container>
                     <div data-aos='fade-up'>
                     <h1 className="text-center mx-auto sub-header">Who are We ?</h1>
+                    <div className="header-divider"></div>
           </div>
           </Container>
                     </div>

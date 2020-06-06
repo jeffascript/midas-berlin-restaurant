@@ -78,7 +78,7 @@ const CarouselComponent = () => {
 					<div className="inner">
 						<h1>{item.title}</h1>
 						<p>{item.description}</p>
-						<button >
+						<button className="text-white">
             <Link
    
     to={item.section}

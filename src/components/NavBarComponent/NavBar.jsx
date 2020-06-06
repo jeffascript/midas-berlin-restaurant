@@ -82,6 +82,42 @@ const NavBar = ({ isNavSticky }) => {
                     Offer
                   </Link></NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
+                    activeClass="active"
+                    to="menu"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Menu
+                  </Link></NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
+                    activeClass="active"
+                    to="info"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Information
+                  </Link></NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
+                    activeClass="active"
+                    to="gallery"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Gallery
+                  </Link></NavLink>
+                </NavItem>
                
               </Nav>
              
