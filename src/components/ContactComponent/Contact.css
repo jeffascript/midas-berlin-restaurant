@@ -1,0 +1,25 @@
+.footer-icon{
+    color: #cacaca;
+    font-size: 1.8em;
+}
+
+.footer-note{
+    color: #cacaca;
+}
+
+.plain-footer-note{
+    color: #cacaca;
+}
+
+.footer-icon:hover, .footer-note:hover{
+  color:  #ca3d26;
+}
+
+.footer-footlinks{
+    color:  #ca3d26;
+    
+}
+
+.footer-footlinks:hover{
+  color:  #cacaca;
+}

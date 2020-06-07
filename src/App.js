@@ -14,6 +14,10 @@ import Menu from "./components/MenuComponent/Menu";
 // import { KnowYourScreenSize } from "./components/ScreenSize";
 import Information from "./components/Information/Information";
 import GalleryMasonry from "./components/GalleryComponent/GalleryMasonry";
+import Contact from "./components/ContactComponent/Contact";
+import footerImg from "./img/footer_img.jpg"
+
+import { BackTop } from 'antd';
 
 
 const infoBg = {
@@ -28,6 +32,12 @@ const bgImg = {
   width: "100%",
 };
 
+const contactBgImg = {
+  background: `url(${footerImg}) no-repeat fixed center center / cover`,
+  height: "100vh", //100vh
+  width: "100%",
+};
+
 function App() {
   const [stickyNav, setStickynav] = useState(false);
 
@@ -39,6 +49,7 @@ function App() {
 
   return (
     <>
+    <BackTop />
       <div className="w-100 h-100" style={{ overflowX: "hidden" }}>
 
         <div id="home">
@@ -123,6 +134,14 @@ function App() {
         </section>
         
 
+
+        <section id="contact" className="section-team footer-section " >
+          <Container fluid className="bg-white footer-dark-cover  "  style={contactBgImg}>
+            <Row>
+            <Contact />
+            </Row>
+          </Container>
+        </section>
 
 
       </div>

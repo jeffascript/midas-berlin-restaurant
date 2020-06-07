@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from "reactstrap";
-
-import promo1 from "../../img/promotions/promo_slide_1.jpg";
-import promo2 from "../../img/promotions/promo_slide_2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BsCreditCard } from "react-icons/bs";

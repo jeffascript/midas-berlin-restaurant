@@ -110,7 +110,6 @@ width: 0  !important;
 } */
 
 
-
 .section-outline::before{
   content: "";
   background: transparent url("./img/bottom-white.png")repeat scroll 0 0;
@@ -126,7 +125,7 @@ width: 0  !important;
   z-index: 1
 }
 
-.section-outline::after{
+.section-outline::after, .footer-section::after{
   content: "";
   background: transparent url("./img/bottom-white.png")repeat scroll 0 0;
   height: 0.4em;
@@ -151,4 +150,15 @@ width: 0  !important;
     top: 0;
     width: 100%;
     /* z-index: 1;*/
+}
+
+.footer-dark-cover::before {
+  background: black url("./img/blur_pattern.png") repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.90;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

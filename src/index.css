@@ -25,17 +25,19 @@ code {
 }
 
 
-a {
+a, .link {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #212324;
 }
 
-.select-color{
+.select-color {
     color: #ca3d26;
 }
 
-a:hover {
+
+
+a:hover, .link:hover {
   color: #ca3d26;
 }
 
@@ -93,6 +95,17 @@ p{
     background: #ca3d26;
 
 }
+
+
+.ant-back-top-content{
+    background: #ca3d26 !important;
+}
+
+
+
+
+
+
 
 
 /*

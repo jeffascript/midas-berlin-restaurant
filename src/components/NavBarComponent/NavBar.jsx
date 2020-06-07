@@ -89,7 +89,7 @@ const NavBar = ({ isNavSticky }) => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={550}
                   >
                     Menu
                   </Link></NavLink>
@@ -101,7 +101,7 @@ const NavBar = ({ isNavSticky }) => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={600}
                   >
                     Information
                   </Link></NavLink>
@@ -113,9 +113,22 @@ const NavBar = ({ isNavSticky }) => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={650}
                   >
                     Gallery
+                  </Link></NavLink>
+                </NavItem>
+
+                <NavItem>
+                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={700}
+                  >
+                    Contact
                   </Link></NavLink>
                 </NavItem>
                
