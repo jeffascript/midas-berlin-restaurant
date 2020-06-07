@@ -44,7 +44,7 @@ const { Option } = Select;
                   
                       
                      <div>
-                            <p>
+                            <p className="text-left">
                                    { 
                                    
                                    recipe.map( oneRecipe =>( <>  <span>{ oneRecipe} </span> </>))

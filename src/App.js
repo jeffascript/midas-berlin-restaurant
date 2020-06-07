@@ -3,6 +3,7 @@ import Header from "./components/HeaderComponent/TopHeader/Header";
 import NavBar from "./components/NavBarComponent/NavBar";
 import { Container, Row } from "reactstrap";
 import imgForBg from "./img/slider/slide_2.jpg";
+import ImgForInfo from "./img/promotions/promotions_area_bg_3.jpg"
 import "./App.css";
 import Sticky from "react-stickynode";
 import CarouselComponent from "./components/HeaderComponent/CarouselComponent/Carousel";
@@ -10,11 +11,16 @@ import { Link } from "react-scroll";
 import AboutUs from "./components/AboutComponent/AboutUs";
 import Offers from "./components/OffersComponent/Offers";
 import Menu from "./components/MenuComponent/Menu";
-import { KnowYourScreenSize } from "./components/ScreenSize";
+// import { KnowYourScreenSize } from "./components/ScreenSize";
 import Information from "./components/Information/Information";
+import GalleryMasonry from "./components/GalleryComponent/GalleryMasonry";
 
 
-
+const infoBg = {
+  background: `url(${ImgForInfo}) no-repeat fixed 0px 0px / cover`,
+  height: "auto", 
+  width: "100%",
+};
 
 const bgImg = {
   background: `url(${imgForBg}) no-repeat fixed 0px 0px / cover`,
@@ -99,8 +105,8 @@ function App() {
 
 
 
-        <section id="info" className="section-team section-outline">
-          <Container fluid className="bg-white section-dark-cover " >
+        <section id="info" className="section-team section-outline " >
+          <Container fluid className="bg-white section-dark-cover  "  style={infoBg}>
             <Row>
             <Information />
             </Row>
@@ -110,8 +116,8 @@ function App() {
         <section id="gallery">
           <Container fluid >
             <Row>
-              <KnowYourScreenSize />
-            <AboutUs />
+              {/* <KnowYourScreenSize /> */}
+           <GalleryMasonry />
             </Row>
           </Container>
         </section>
