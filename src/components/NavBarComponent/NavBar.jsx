@@ -1,145 +1,202 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
- 
-  NavbarText,
-  Col
-} from 'reactstrap';
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    NavbarText,
+    Col,
+} from "reactstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
-import "./NavBar.css"
-
-
-
+import "./NavBar.css";
 
 const NavBar = ({ isNavSticky }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+    const toggle = () => setIsOpen(!isOpen);
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
-  const navColorOnScroll = {
-      color: "black"
-  }
+    const navColorOnScroll = {
+        color: "black",
+    };
 
+    return (
+        <Col className={`${isNavSticky ? "nav-before" : null}   p-0  `}>
+            <Navbar
+                color={isNavSticky ? "light" : "transparent"}
+                light
+                expand="md"
+                style={
+                    isNavSticky
+                        ? { boxShadow: "0px 0px 20px 0px #000000" }
+                        : null
+                }
+            >
+                <NavbarBrand onClick={scrollToTop}>MIDAS BERLIN</NavbarBrand>
+                <NavbarToggler onClick={toggle} className="bg-dark" />
+                <Collapse isOpen={isOpen} navbar>
+                    <Col className="col-md-0 offset-md-2 offset-lg-4 offset-xl-6 "></Col>
+                    <Nav className="mr-auto text-body" navbar>
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    Home
+                                </Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    About
+                                </Link>
+                            </NavLink>
+                        </NavItem>
 
-  return (
-   
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="offer"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    Offer
+                                </Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="menu"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={550}
+                                >
+                                    Menu
+                                </Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="info"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={600}
+                                >
+                                    Information
+                                </Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="gallery"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={650}
+                                >
+                                    Gallery
+                                </Link>
+                            </NavLink>
+                        </NavItem>
 
-  
-      <Col className= {`${isNavSticky? "nav-before" : null}   p-0  ` }>
-          <Navbar color= { isNavSticky? "white" :"transparent"}  expand="md" style={isNavSticky ? {boxShadow: "0px 0px 20px 0px #000000"
-} : null}>
-            <NavbarBrand onClick={scrollToTop}>reactstrap</NavbarBrand>
-            <NavbarToggler onClick={toggle}  className="bg-dark"/>
-            <Collapse isOpen={isOpen} navbar>
-                <Col className="col-md-3 offset-md-3"></Col> 
-              <Nav className="mr-auto text-body" navbar>
-                
-                <NavItem >
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link 
-                    activeClass = "active"
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    
-                  >
-                    Home
-                  </Link></NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    About
-                  </Link></NavLink>
-                </NavItem>
-
-                <NavItem>
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
-                    activeClass="active"
-                    to="offer"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Offer
-                  </Link></NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
-                    activeClass="active"
-                    to="menu"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={550}
-                  >
-                    Menu
-                  </Link></NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
-                    activeClass="active"
-                    to="info"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={600}
-                  >
-                    Information
-                  </Link></NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
-                    activeClass="active"
-                    to="gallery"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={650}
-                  >
-                    Gallery
-                  </Link></NavLink>
-                </NavItem>
-
-                <NavItem>
-                  <NavLink style={isNavSticky? {navColorOnScroll}: {color:"white"}}>   <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={700}
-                  >
-                    Contact
-                  </Link></NavLink>
-                </NavItem>
-               
-              </Nav>
-             
-            </Collapse>
-          </Navbar>
-      </Col>
-    
-  
-  );
+                        <NavItem>
+                            <NavLink
+                                style={
+                                    isNavSticky
+                                        ? { navColorOnScroll }
+                                        : { color: "white" }
+                                }
+                            >
+                                {" "}
+                                <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={700}
+                                >
+                                    Contact
+                                </Link>
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </Col>
+    );
     // return (
     //     <div className="mainmenu-area" id="mainmenu-area">
     //     <div className="mainmenu-area-bg"></div>

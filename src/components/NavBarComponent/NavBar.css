@@ -42,3 +42,32 @@ a.nav-link .active{
     box-shadow: 0px 0px 2px 0px #000000;
 
 }
+
+a .button.bg-dark:hover, a .button.bg-dark {
+    background-color: #ffffff4a!important;
+}
+a .bg-dark:focus, a .bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
+    /* background-color: #1d2124!important; */
+    background-color: #ffffff4a!important;
+}
+
+a button.bg-dark:hover, button.bg-dark:hover, button.bg-dark {
+    background-color: #ffffff4a!important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.178);
+    border-color: rgba(0, 0, 0, 0.075);
+}
+
+a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
+    background-color: #ffffff4a!important;
+}
+
+#home > div > header > div > div.sticky-outer-wrapper.active > div > div > div > div > nav > button{
+    background-color: #ffffff4a!important;
+}
+
+#home > div > header > div > div.sticky-outer-wrapper > div > div > div > div > nav > button{
+    background-color: #ffffff4a!important;
+}
