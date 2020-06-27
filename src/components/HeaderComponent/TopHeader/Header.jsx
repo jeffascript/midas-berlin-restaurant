@@ -18,11 +18,14 @@ const Header = () => {
             <Container>
               <div className="text-white header-info">
                 <p>
-                  <FaRegEnvelope />{" "}
+                  <FaRegEnvelope style={{ fontSize: "small" }} />{" "}
                   <span>
                     {" "}
                     Email:
-                    <a href="/" className="text-white">
+                    <a
+                      href="mailto:ofoaro.jeff@gmail.com?subject=I%20want%20to%20Buy%20this%20webpage&body=I you want to hire you or I want to buy this web page?"
+                      className="text-white"
+                    >
                       info@midas-berlin.de
                     </a>
                   </span>
