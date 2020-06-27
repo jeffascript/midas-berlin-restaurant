@@ -75,7 +75,9 @@ const Offers = () => {
                           </h3>
                           <p>{smallText}</p>
                           <div className="order-button">
-                            <a href="#">Place Order</a>
+                            <a href="mailto:ofoaro.jeff@gmail.com?subject=I%20want%20to%20Buy%20this%20webpage&body=I you want to hire you or I want to buy this web page?">
+                              Place Order
+                            </a>
                           </div>
                         </Col>
                       </Row>
@@ -145,8 +147,8 @@ export default Offers;
 //   width: '100%'
 // }}
 // />
-{
-  /* <img
+
+/* <img
 src="https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
 style={{
   display: 'block',
@@ -165,4 +167,3 @@ style={{
   width: '100%'
 }}
 /> */
-}

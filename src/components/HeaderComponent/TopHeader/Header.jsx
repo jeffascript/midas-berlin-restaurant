@@ -57,7 +57,9 @@ const Header = () => {
 
               <div className="col-md-6 p-0 col-sm-8 col-xs-8">
                 <div className="top-booking">
-                  <a href="/">Make a Reservation</a>
+                  <a href="mailto:ofoaro.jeff@gmail.com?subject=I%20want%20to%20Buy%20this%20webpage&body=I you want to hire you or I want to buy this web page?">
+                    Make a Reservation
+                  </a>
                 </div>
               </div>
             </Row>

@@ -1,0 +1,153 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  background: #000000e8 !important;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+#animate2,
+#animate-text path {
+  fill: none;
+  stroke: #ffff;
+  stroke-width: 5px;
+  stroke-dashoffset: 23000;
+  stroke-dasharray: 23000;
+  opacity: 1;
+  animation: animatetxt 5s forwards;
+}
+
+@keyframes animatetxt {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 23000;
+  }
+  40% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 23000;
+  }
+
+  90% {
+    opacity: 1;
+    fill: #ffff;
+    stroke-dashoffset: 0;
+  }
+}
+/*   
+  #colored1, #colored2, #colored-text{
+    
+  }
+   */
+
+#colored1,
+#colored2,
+#colored-text {
+  fill: none;
+  fill-opacity: 0;
+  z-index: -1;
+  animation: maintxt 6.5s ease-in forwards;
+}
+
+@keyframes maintxt {
+  /*from{
+      fill-opacity: 0;
+      fill: none
+    }
+    
+    to{
+      fill-opacity: 10;
+      fill: red
+    }*/
+  0% {
+    fill-opacity: 0;
+    fill: none;
+  }
+  30% {
+    fill-opacity: 0;
+    fill: none;
+  }
+  50% {
+    fill-opacity: 0;
+    fill: none;
+  }
+
+  80% {
+    fill-opacity: 10;
+    fill: #ca3d26;
+  }
+  90% {
+    fill-opacity: 10;
+    fill: #ca3d26;
+  }
+}
+
+/*0% {
+      opacity: 0;
+       fill: none;
+    }
+    30%{
+      opacity:0;
+      fill: none;
+    }
+     50%{
+      opacity:0;
+       fill: none;
+    }
+    
+     70%{
+     opacity:10;
+       fill: #CA3D26
+    }
+   80% {
+      opacity: 10;
+     fill: #CA3D26
+    }
+    100% { 
+       opacity: 10;
+     fill: #CA3D26
+    }*/
+
+/*#animate1{
+     fill: none;
+    stroke: #ffff;
+    stroke-width: 5px;
+    stroke-dashoffset: 23000;
+    stroke-dasharray: 23000;
+    opacity: 1;
+    
+  }*/
+
+#animate1 {
+  animation: chefanim 4.75s ease-in-out;
+  /*transform-origin: center;
+    transform-box: fill-box;*/
+}
+
+@keyframes chefanim {
+  0% {
+    transform: rotateX(0deg);
+    fill: #ffff;
+  }
+
+  90% {
+    transform: rotateX(65deg);
+    fill: #ffff;
+  }
+}

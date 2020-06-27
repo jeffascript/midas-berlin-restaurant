@@ -7,7 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText,
   Col,
 } from "reactstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
