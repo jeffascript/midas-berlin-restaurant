@@ -68,7 +68,7 @@ const CarouselComponent = () => {
           style={{ background: `url('${item.image}') no-repeat 0 0 scroll` }}
         >
           <div className="inner">
-            <h1 style={{ fontSize: "65px", whiteSpace: "pre-line" }}>
+            <h1 style={{ fontSize: "xxx-large", whiteSpace: "pre-line" }}>
               {item.title}
             </h1>
             <p className="text-center">{item.description}</p>

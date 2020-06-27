@@ -57,7 +57,7 @@ const Header = () => {
 
               <div className="col-md-6 p-0 col-sm-8 col-xs-8">
                 <div className="top-booking">
-                  <a href="#">Make a Reservation</a>
+                  <a href="/">Make a Reservation</a>
                 </div>
               </div>
             </Row>
