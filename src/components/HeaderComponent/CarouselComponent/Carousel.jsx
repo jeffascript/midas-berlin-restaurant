@@ -26,8 +26,8 @@ const content = [
   // },
 
   {
-    title: `Welcome to Midas 
-    Restaurant `,
+    title: `Welcome to 
+    Midas Restaurant & Cafe `,
     description: "We are a family friendly restaurant based in Berlin.",
     button: "learn more",
     image: food1,
@@ -36,7 +36,7 @@ const content = [
     section: "about",
   },
   {
-    title: "Our Menus",
+    title: "Our Various Menu ",
     description: "See what is new in our menu today.",
     button: "Today's meal",
     image: food2,
@@ -68,7 +68,9 @@ const CarouselComponent = () => {
           style={{ background: `url('${item.image}') no-repeat 0 0 scroll` }}
         >
           <div className="inner">
-            <h1>{item.title}</h1>
+            <h1 style={{ fontSize: "65px", whiteSpace: "pre-line" }}>
+              {item.title}
+            </h1>
             <p className="text-center">{item.description}</p>
             <button className="text-white">
               <Link

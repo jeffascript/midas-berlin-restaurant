@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Container, Col } from "reactstrap";
+import { Row, Container } from "reactstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./AboutUs.css";
@@ -32,14 +32,15 @@ const AboutUs = () => {
               varied: our kitchen creates a new selection of
               German-international delicacies every day, classic, without any
               frills. Midas stands for the modern metropolitan kitchen of
-              Berlin. Cosmopolitan and regional, high quality and carefree.  
+              Berlin. Cosmopolitan and regional, high quality and carefree.
+              Highly rated in the Moabit district. 
             </p>
           </div>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div data-aos="zoom-in-right">
             <p className="text-justify">
-               The Midas is located in Berlin-Mitte and is barrier-free. For 4
+              The Midas is located in Berlin-Mitte and is barrier-free. For 4
               years in the Moabit and already a permanent institution: The
               Midas! Behind the high glass facades you can look out over the
               Spree and let yourself be pampered by top chef Holger Zurbrüg and
