@@ -108,7 +108,7 @@ const Contact = () => {
                   {" "}
                   {new Date().getFullYear()}&nbsp;&nbsp;{" "}
                   <a href="/" className="footer-footlinks">
-                    Eat Berlin
+                    Midas Berlin
                   </a>{" "}
                   &nbsp;&nbsp; All rights Reserved.
                 </p>
