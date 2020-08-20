@@ -95,3 +95,8 @@ p {
 .ant-back-top-content {
   background: #ca3d26 !important;
 }
+
+.navbar-collapse {
+  /* background: #0000006b !important; */
+  padding: 1em !important;
+}
