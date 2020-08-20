@@ -96,7 +96,14 @@ p {
   background: #ca3d26 !important;
 }
 
-.navbar-collapse {
-  /* background: #0000006b !important; */
+/* .navbar-collapse {
+   background: #0000006b !important; 
   padding: 1em !important;
-}
+} */
+/* 
+@media only screen and (max-width: 500px) {
+  .navbar-collapse {
+    background: #0000006b !important;
+    padding: 1.3em !important;
+  }
+} */

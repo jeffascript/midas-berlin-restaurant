@@ -28,7 +28,7 @@ const NavBar = ({ isNavSticky }) => {
   };
 
   return (
-    <Col className={`${isNavSticky ? "nav-before" : null}   p-0  `}>
+    <Col className={`${isNavSticky ? "nav-before" : "new-nav"}   p-0  `}>
       <Navbar
         color={isNavSticky ? "light" : "transparent"}
         light
